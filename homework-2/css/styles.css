@@ -98,10 +98,6 @@ ul {
   list-style-type: none;
 }
 
-footer {
-  background-color: var(--color-brand-dark);
-}
-
 .section {
   padding: 48px 0;
 }
@@ -397,6 +393,10 @@ footer {
 
 /* Footer */
 .footer {
+  background-color: var(--color-brand-dark);
+  width: 1440px;
+  height: 278px;
+  margin: 0 auto;
   padding: 56px 0;
 }
 
