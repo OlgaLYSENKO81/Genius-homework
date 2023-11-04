@@ -1,0 +1,25 @@
+.procedures-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.procedures-title {
+  margin-bottom: 48px;
+}
+
+.procedures-p {
+  height: 456px;
+  line-height: 1.2;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 2 * 16px) / 3);
+  flex-wrap: wrap;
+}
