@@ -1,0 +1,86 @@
+.hero-section {
+  padding-top: 71.52px;
+  padding-bottom: 56px;
+  background-image: linear-gradient(
+      57deg,
+      #fff 20.92%,
+      rgba(255, 255, 255, 0.78) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
+    ),
+    url(../../image/fon1.jpg);
+  background-repeat: no-repeat;
+  background-position: center top -40px;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: linear-gradient(
+        89deg,
+        #fff 30.62%,
+        rgba(255, 255, 255, 0.85) 41.31%,
+        rgba(255, 255, 255, 0.19) 58.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      ),
+      url(../../image/fon1.jpg);
+    padding-bottom: 126.81px;
+    padding-left: 206px;
+    padding-top: 119.52px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    text-align: left;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      line-height: 1.17;
+      text-align: left;
+    }
+  }
+  &__title {
+    @media screen and (min-width: $bp-desktop) {
+      width: 529px;
+    }
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 1.18;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.17;
+      text-align: left;
+      padding: 16px 32px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__button-comment {
+    font-size: 11px;
+    line-height: 1.5;
+    width: 186px;
+    color: #4a4a4a;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 12px;
+      line-height: 1.6;
+      width: 238px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

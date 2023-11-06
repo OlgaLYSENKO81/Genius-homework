@@ -1,0 +1,50 @@
+.procedures-card {
+  position: relative;
+  height: 456px;
+  width: 344px;
+  border-radius: 4px 120px 4px 120px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.5%,
+    rgba(1, 28, 68, 0.71) 84.61%,
+    var(--color-brand-dark) 100%
+  );
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.procedures-card:hover {
+  transform: scale(1.07);
+}
+
+.procedures-image {
+  position: absolute;
+  z-index: -1;
+  border-radius: 4px 120px 4px 120px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// .img-card {
+//   height: 456px;
+//   width: 100%;
+//   border-radius: 4px 120px 4px 120px;
+//   background-image: linear-gradient(
+//     180deg,
+//     rgba(1, 28, 68, 0) 48.53%,
+//     rgba(1, 28, 68, 0.73) 84.61%,
+//     var(--color-brand-dark--) 101.39%
+//   );
+// }
+
+.procedures-text {
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 115px;
+  right: 77px;
+  bottom: 32px;
+  color: white;
+}

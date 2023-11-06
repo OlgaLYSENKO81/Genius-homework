@@ -1,0 +1,57 @@
+.input {
+  position: relative;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  display: block;
+  padding: 18px 32.85px;
+  width: 310px;
+  font-size: 13px;
+  line-height: 1.17;
+  border-radius: 32px;
+  border: 2px solid #747272;
+  background-color: transparent;
+  margin: 0 auto;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.form-input-contact {
+  display: block;
+  padding: 18px 32.85px;
+  width: 100%;
+  max-width: 310px;
+  font-size: 13px;
+  line-height: 1.17;
+  border-radius: 32px;
+  border: 2px solid #747272;
+  background-color: transparent;
+  margin: 0 auto 8px;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.form-input::placeholder {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.17;
+}
+.form-input-contact::placeholder {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.form-input-contact:focus {
+  background-color: #747272;
+  outline: none;
+}
+
+.form-input:focus {
+  background-color: #747272;
+  outline: none;
+}

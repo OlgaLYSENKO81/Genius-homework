@@ -1,0 +1,88 @@
+.footer {
+  background-color: var(--color-brand-dark);
+  position: relative;
+  width: 1440px;
+  height: 278px;
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-adress {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer::before {
+  position: absolute;
+  width: 247px;
+  height: 152px;
+  right: 0;
+  bottom: 0;
+  background-image: url(../image/pills.png);
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer-icon {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-light);
+}
+
+.adress-list,
+.adress-info {
+  flex-grow: 1;
+}
+
+.adress-icon {
+  fill: #ffffff;
+  transition: transform 0.2s;
+}
+
+.adress-icon:hover {
+  transform: scale(1.07);
+}
+
+.adress-copyright {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.adress-copyright:hover {
+  color: var(--color-brand-light);
+}
+
+.copyright {
+  font-size: 13px;
+  line-height: 1.2;
+  color: #747272;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
