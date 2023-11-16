@@ -1,0 +1,106 @@
+.hero-section {
+  padding: 70px 15px;
+  background-image: linear-gradient(
+      57deg,
+      #fff 20.92%,
+      rgba(255, 255, 255, 0.785) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
+    ),
+    url('../image/fon-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center top -5px;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: $bp-tablet) {
+    height: 660px;
+    padding: 125px 0;
+    width: 100%;
+    text-align: flex-start;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    text-align: left;
+    padding-left: 206px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        57deg,
+        #fff 20.92%,
+        rgba(255, 255, 255, 0.785) 44.46%,
+        rgba(255, 255, 255, 0.2) 58.9%,
+        rgba(255, 255, 255, 0) 72.45%
+      ),
+      url('../image/fon-hero@2x.jpg');
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      line-height: 1.17;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    color: var(--color-brand-light);
+    font-family: 'Play', sans-serif;
+    font-size: 54px;
+    line-height: 0.8;
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 529px;
+      color: var(--color-brand-light);
+      font-family: 'Play', sans-serif;
+      text-align: left;
+      font-size: 140px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      line-height: 0.8;
+    }
+  }
+
+  &__button {
+    font-style: 16px;
+    line-height: 1.18;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-style: 18px;
+      line-height: 1.17;
+      padding: 16px 32px;
+      margin-bottom: 14px;
+      text-align: left;
+    }
+  }
+
+  &__button-comment {
+    font-size: 11px;
+    line-height: 1.5;
+    width: 186px;
+    color: #4a4a4a;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 12px;
+      line-height: 1.6;
+      width: 238px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
