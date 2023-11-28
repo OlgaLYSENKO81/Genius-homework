@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="./index.html">
+            <a class="header__logo" href="#">
               <img
                 srcset="./image/logo.png 1x, ./image/logo@2x.png 2x"
                 src="./image/logo.png"
@@ -37,32 +37,27 @@
                 <a class="link" href="#contact-section">Контакти</a>
               </li>
             </ul>
+
+            <div class="header__icon">
+              <a href="tel:+380960000007">
+                <svg class="header__icons" width="32" height="32">
+                  <use href="./image/icons.svg#icon-telephone"></use>
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg class="header__icons" width="32" height="32">
+                  <use href="./image/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg class="header__icons" width="32" height="32">
+                  <use href="./image/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
           </nav>
-          <div>
-            <ul class="header__icon">
-              <li>
-                <a href="tel:+380960000007">
-                  <svg class="header__icons" width="32" height="32">
-                    <use href="./image/icons.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="header__icons" width="32" height="32">
-                    <use href="./image/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="header__icons" width="32" height="32">
-                    <use href="./image/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
           <button class="header__burger menu-btn-open" type="button">
             <svg width="24" height="24">
               <use href="./image/icons.svg#icon-burger-1"></use>
@@ -79,42 +74,38 @@
             </a>
             <ul class="mobile-menu__list">
               <li>
-                <a class="link" href="#about-section">Про нас</a>
+                <a class="link" id="link-1" href="#about-section">Про нас</a>
               </li>
               <li>
-                <a class="link" href="#whyme-section">Чому ми</a>
+                <a class="link" id="link-2" href="#whyme-section">Чому ми</a>
               </li>
               <li>
-                <a class="link" href="#procedures-section">Наші процедури</a>
+                <a class="link" id="link-3" href="#procedures-section"
+                  >Наші процедури</a
+                >
               </li>
               <li>
-                <a class="link" href="#contact-section">Контакти</a>
+                <a class="link" id="link-4" href="#contact-section">Контакти</a>
               </li>
             </ul>
-            <div>
-              <ul class="mobile-menu__icon-list">
-                <li>
-                  <a href="tel:+380960000007">
-                    <svg class="mobile-menu__icons" width="32" height="32">
-                      <use href="./image/icons.svg#icon-telephone"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="mobile-menu__icons" width="32" height="32">
-                      <use href="./image/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="mobile-menu__icons" width="32" height="32">
-                      <use href="./image/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <div class="mobile-menu__icon-list">
+              <a href="tel:+380960000007">
+                <svg class="mobile-menu__icons" width="32" height="32">
+                  <use href="./image/icons.svg#icon-telephone"></use>
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg class="mobile-menu__icons" width="32" height="32">
+                  <use href="./image/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg class="mobile-menu__icons" width="32" height="32">
+                  <use href="./image/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -122,7 +113,7 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
+        <div class="hero-section__container container">
           <p class="hero-section__text">Косметологічна клініка</p>
           <h1 class="hero-section__title">Beauty Zone</h1>
           <button
@@ -142,40 +133,42 @@
           <div class="about-section__container">
             <div class="about-section__content">
               <h2 class="about-section__title section__title">
-                Перевтілюйтесь <br />
-                в <span class="text-brand">Beauty Zone!</span>
+                Перевтілюйтесь в
+                <span class="text-bold text-brand">Beauty Zone!</span>
               </h2>
-              <div class="about-section__text-box">
-                <p class="about-section__text">
-                  Наша косметологічна клініка пропонує вам професійні послуги з
-                  догляду за шкірою обличчя та тіла.
-                </p>
-                <p>
-                  B <span class="text-bold">Beauty Zone</span> ми гарантуємо
-                  найвищі стандарти якості та приємний сервіс. Наші
-                  косметологічні процедури та препарати допоможуть вам
-                  підтримувати свою красу та молодість. З нами краса назавжди!
-                </p>
-              </div>
+              <p class="about-section__text">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about-section__text">
+                B <span class="text-bold">Beauty Zone</span> ми гарантуємо
+                найвищі стандарти якості та приємний сервіс. Наші косметологічні
+                процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. <br />
+                З нами краса назавжди!
+              </p>
+              <svg class="about-section__decor1" width="64" height="64">
+                <use href="./image/icons.svg#icon-Star-1"></use>
+              </svg>
             </div>
             <div class="about-section__image">
+              <svg class="about-section__image-decor2" width="40" height="40">
+                <use href="./image/icons.svg#icon-Star-2"></use>
+              </svg>
+              <svg class="about-section__image-decor1" width="64" height="64">
+                <use href="./image/icons.svg#icon-Star-1"></use>
+              </svg>
+              <svg class="about-section__image-decor3" width="16" height="16">
+                <use href="./image/icons.svg#icon-Star-3"></use>
+              </svg>
               <img
-                class="about-section__image1 masks"
+                class="about-section__image-before masks"
                 srcset="./image/Mask1.jpg 1x, ./image/Mask1@2x.jpg 2x"
                 src="./image/Mask1.jpg"
                 alt="Обличча до процедури"
               />
-              <svg class="about-section__decor2" width="40" height="40">
-                <use href="./image/icons.svg#icon-Star-2"></use>
-              </svg>
-              <svg class="about-section__decor1" width="64" height="64">
-                <use href="./image/icons.svg#icon-Star-1"></use>
-              </svg>
-              <svg class="about-section__decor3" width="16" height="16">
-                <use href="./image/icons.svg#icon-Star-3"></use>
-              </svg>
               <img
-                class="about-section__image2 masks"
+                class="about-section__image-after masks"
                 srcset="./image/Mask2.jpg 1x, ./image/Mask2@2x.jpg 2x"
                 src="./image/Mask2.jpg"
                 alt="Обличча після процедури"
@@ -193,35 +186,44 @@
               Чому люди <span class="text-brand">обирають нас</span>
             </h2>
             <ul class="whyme-section__list">
-              <li class="whyme-section__item">
-                <svg class="whyme-section__icon" width="48" height="48">
-                  <use href="./image/icons.svg#icon-Atomicons"></use>
-                </svg>
-                <p>
-                  Всі наші косметологи мають<br />
-                  вищу медичну освіту <br />
-                  та стаж роботи від 5 років
-                </p>
+              <li>
+                <article class="whyme-section__item">
+                  <a href="#">
+                    <svg class="whyme-section__icon" width="48" height="48">
+                      <use href="./image/icons.svg#icon-Atomicons"></use>
+                    </svg>
+                  </a>
+                  <p class="whyme-section__text">
+                    Всі наші косметологи мають вищу медичну освіту та стаж
+                    роботи від 5 років
+                  </p>
+                </article>
               </li>
-              <li class="whyme-section__item">
-                <svg class="whyme-section__icon" width="48" height="48">
-                  <use href="./image/icons.svg#icon-medicicon"></use>
-                </svg>
-                <p>
-                  Використовуємо тільки <br />
-                  професійне обладнання та <br />
-                  косметику, перевірену часом
-                </p>
+              <li>
+                <article class="whyme-section__item">
+                  <a href="#">
+                    <svg class="whyme-section__icon" width="48" height="48">
+                      <use href="./image/icons.svg#icon-medicicon"></use>
+                    </svg>
+                  </a>
+                  <p class="whyme-section__text">
+                    Використовуємо тільки професійне обладнання та косметику,
+                    перевірену часом
+                  </p>
+                </article>
               </li>
-              <li class="whyme-section__item">
-                <svg class="whyme-section__icon" width="48" height="48">
-                  <use href="./image/icons.svg#icon-crown"></use>
-                </svg>
-                <p>
-                  Наша мета - підкреслити <br />
-                  переваги та приховати <br />
-                  недоліки, а не переробити
-                </p>
+              <li>
+                <article class="whyme-section__item">
+                  <a href="#">
+                    <svg class="whyme-section__icon" width="48" height="48">
+                      <use href="./image/icons.svg#icon-crown"></use>
+                    </svg>
+                  </a>
+                  <p class="whyme-section__text">
+                    Наша мета - підкреслити переваги та приховати недоліки, а не
+                    переробити
+                  </p>
+                </article>
               </li>
             </ul>
           </div>
@@ -236,7 +238,7 @@
             </h2>
             <div class="procedures-section__slider">
               <button class="carousel-button prev" type="button">
-                <svg class="carousel-arrow" width="16.76px">
+                <svg class="carousel-arrow" width="17px" height="17px">
                   <use href="./image/icons.svg#icon-Arrow-1"></use>
                 </svg>
               </button>
@@ -253,10 +255,7 @@
                         src="./image/Maskgroup.jpg"
                         alt=""
                       />
-                      <p class="procedures-card__text">
-                        Маски <br />
-                        для обличчя
-                      </p>
+                      <p class="procedures-card__text">Маски для обличчя</p>
                     </article>
                   </li>
                   <li class="swiper-slide">
@@ -270,10 +269,7 @@
                         src="./image/Maskgroup2.jpg"
                         alt=""
                       />
-                      <p class="procedures-card__text">
-                        Ін'єкції <br />
-                        для обличчя
-                      </p>
+                      <p class="procedures-card__text">Ін'єкції для обличчя</p>
                     </article>
                   </li>
                   <li class="swiper-slide">
@@ -297,10 +293,7 @@
                         src="./image/Maskgroup.jpg"
                         alt=""
                       />
-                      <p class="procedures-card__text">
-                        Маски <br />
-                        для обличчя
-                      </p>
+                      <p class="procedures-card__text">Маски для обличчя</p>
                     </article>
                   </li>
                   <li class="swiper-slide">
@@ -310,10 +303,7 @@
                         src="./image/Maskgroup2.jpg"
                         alt=""
                       />
-                      <p class="procedures-card__text">
-                        Ін'єкції <br />
-                        для обличчя
-                      </p>
+                      <p class="procedures-card__text">Ін'єкції для обличчя</p>
                     </article>
                   </li>
                   <li class="swiper-slide">
@@ -331,22 +321,22 @@
                   <button
                     class="pagination__button"
                     type="button"
-                    aria-label="Go to slide 1"
+                    aria-label="slide 1"
                   ></button>
                   <button
                     class="pagination__button"
                     type="button"
-                    aria-label="Go to slide 2"
+                    aria-label="slide 2"
                   ></button>
                   <button
                     class="pagination__button"
                     type="button"
-                    aria-label="Go to slide 3"
+                    aria-label="slide 3"
                   ></button>
                 </div>
               </div>
               <button class="carousel-button next" type="button">
-                <svg class="carousel-button__arrow" width="16.76px">
+                <svg class="carousel-button__arrow" width="17px" height="17px">
                   <use href="./image/icons.svg#icon-Arrow-1"></use>
                 </svg>
               </button>

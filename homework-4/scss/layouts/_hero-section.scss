@@ -1,75 +1,57 @@
 .hero-section {
-  padding: 70px 15px;
-  background-image: linear-gradient(
-      57deg,
-      #fff 20.92%,
-      rgba(255, 255, 255, 0.785) 44.46%,
-      rgba(255, 255, 255, 0.2) 58.9%,
-      rgba(255, 255, 255, 0) 72.45%
-    ),
-    url('../image/fon-hero.jpg');
+  background-image: url(../image/fon.png);
+  overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center top -5px;
+  background-position: center;
   background-size: cover;
-  text-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  max-width: 1440px;
+  padding: 100px 20px;
+  margin: 0 auto;
 
   @media screen and (min-width: $bp-tablet) {
-    height: 660px;
-    padding: 125px 0;
-    width: 100%;
-    text-align: flex-start;
+    padding: 123px 0 127px 106px;
   }
 
-  @media screen and (min-width: $bp-desktop) {
-    text-align: left;
-    padding-left: 206px;
-  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        57deg,
-        #fff 20.92%,
-        rgba(255, 255, 255, 0.785) 44.46%,
-        rgba(255, 255, 255, 0.2) 58.9%,
-        rgba(255, 255, 255, 0) 72.45%
-      ),
-      url('../image/fon-hero@2x.jpg');
+    @media screen and (min-width: $bp-tablet) {
+      align-items: flex-start;
+    }
   }
 
   &__text {
     font-size: 12px;
     line-height: 1.5;
-    text-align: center;
+    margin: 0;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       font-size: 18px;
       line-height: 1.17;
-      text-align: left;
+      margin-bottom: 16px;
     }
   }
 
   &__title {
     color: var(--color-brand-light);
     font-family: 'Play', sans-serif;
+    width: 330px;
     font-size: 54px;
     line-height: 0.8;
-    margin-top: 0;
-    margin-bottom: 32px;
+    font-weight: 700;
 
-    @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 32px;
+    margin-top: 0;
+    padding: 0;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $bp-tablet) {
       width: 529px;
-      color: var(--color-brand-light);
-      font-family: 'Play', sans-serif;
-      text-align: left;
+
       font-size: 140px;
-      font-weight: 700;
       margin-bottom: 40px;
-      line-height: 0.8;
     }
   }
 

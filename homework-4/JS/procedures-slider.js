@@ -4,10 +4,19 @@ const swiper = new Swiper('.procedures-section__container', {
   spaceBetween: '16',
 
   breakpoints: {
+    480: {
+      slidesPerView: '2',
+    },
     768: {
       slidesPerView: '2',
     },
+    1048: {
+      slidesPerView: '3',
+    },
     1280: {
+      slidesPerView: '3',
+    },
+    1920: {
       slidesPerView: '3',
     },
   },
@@ -22,4 +31,5 @@ const swiper = new Swiper('.procedures-section__container', {
     nextEl: '.carousel-button.next',
     prevEl: '.carousel-button.prev',
   },
+  watchOverflow: false,
 });
