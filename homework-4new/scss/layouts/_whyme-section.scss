@@ -1,0 +1,80 @@
+.whyme-section {
+  padding-top: 176px;
+  @media screen and (min-width: $bp-tablet) {
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 56px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 48px;
+      width: 442px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    border-radius: 32px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+    margin: 0 auto;
+    text-align: center;
+    width: 316px;
+    height: 181px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 235px;
+      height: 152px;
+      padding: 16px 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 316px;
+      height: 181px;
+      padding: 24px 32px;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-brand-light);
+  }
+
+  &__text {
+    margin-bottom: 0;
+    width: 252px;
+    font-weight: 400;
+    font-size: 18px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      width: 252px;
+    }
+  }
+}

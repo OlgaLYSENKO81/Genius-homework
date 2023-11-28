@@ -1,0 +1,88 @@
+.hero-section {
+  background-image: url(../image/fon.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  padding: 100px 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 123px 0 127px 106px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.17;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    color: var(--color-brand-light);
+    font-family: 'Play', sans-serif;
+    width: 330px;
+    font-size: 54px;
+    line-height: 0.8;
+    font-weight: 700;
+
+    margin-bottom: 32px;
+    margin-top: 0;
+    padding: 0;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 529px;
+
+      font-size: 140px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    font-style: 16px;
+    line-height: 1.18;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-style: 18px;
+      line-height: 1.17;
+      padding: 16px 32px;
+      margin-bottom: 14px;
+      text-align: left;
+    }
+  }
+
+  &__button-comment {
+    font-size: 11px;
+    line-height: 1.5;
+    width: 186px;
+    color: #4a4a4a;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 12px;
+      line-height: 1.6;
+      width: 238px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

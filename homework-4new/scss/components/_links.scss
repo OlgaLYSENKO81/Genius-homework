@@ -1,0 +1,11 @@
+.link {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  transition: color 0.3s;
+  transition: transform 0.2s, color 0.2s;
+
+  &:hover {
+    color: var(--color-brand-light);
+    transform: scale(1.07);
+  }
+}
